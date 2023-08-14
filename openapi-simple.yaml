@@ -44,28 +44,13 @@ paths:
         A detailed description of the operation.
         Use markdown for rich text representation,
         such as **bold**, *italic*, and [links](https://swagger.io).
-      parameters:
-      
-        - name: id
-          in: query
-          description: User ID
-          required: true
-          schema:
-            type: integer
-            format: int64
-            enum:
-            - 1
-          
+              
 
         
       responses:
         '200':
           description: Successful operation
 
-     
-
-      x-filter:
-        type: RHS-Colon 
 
       externalDocs:
         description: Learn more about user operations provided by this API.
