@@ -34,9 +34,16 @@ tags:
 paths:
 
 
-  /v1/cryptocurrency/{map}:
+  /v1/cryptocurrency/map:
     get:
-                 
+      tags:
+        - coinmarketcap
+      summary: Gets a user by ID.
+      description: >
+        A detailed description of the operation.
+        Use markdown for rich text representation,
+        such as **bold**, *italic*, and [links](https://swagger.io).
+      
       responses:
         '200':
           description: Successful operation
@@ -46,7 +53,34 @@ paths:
         description: Learn more about user operations provided by this API.
         url: http://api.example.com/docs/user-operations/
         
-  
+  /v1/cryptocurrency/map/{id}:
+    get:
+      tags:
+        - coinmarketcap
+      summary: Gets a user by ID.
+      description: >
+        A detailed description of the operation.
+        Use markdown for rich text representation,
+        such as **bold**, *italic*, and [links](https://swagger.io).
+     
+      parameters:
+        
+        - name: id
+          in: path
+          description: User ID
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '200':
+          description: Successful operation
+
+
+      externalDocs:
+        description: Learn more about user operations provided by this API.
+        url: http://api.example.com/docs/user-operations/
+        
 components:
 
   securitySchemes:
