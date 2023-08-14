@@ -57,9 +57,15 @@ paths:
             - 1
           
 
+        
       responses:
         '200':
           description: Successful operation
+
+     
+
+      x-filter:
+        type: RHS-Colon 
 
       externalDocs:
         description: Learn more about user operations provided by this API.
