@@ -34,7 +34,7 @@ tags:
 paths:
 
 
-  /v1/cryptocurrency/map:
+  /v1/cryptocurrency/{map}:
     get:
                  
       responses:
