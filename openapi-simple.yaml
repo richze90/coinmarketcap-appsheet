@@ -36,17 +36,7 @@ paths:
 
   /v1/cryptocurrency/map:
     get:
-      tags:
-        - coinmarketcap
-      summary: Gets a user by ID.
-      
-      description: >
-        A detailed description of the operation.
-        Use markdown for rich text representation,
-        such as **bold**, *italic*, and [links](https://swagger.io).
-              
-
-        
+                 
       responses:
         '200':
           description: Successful operation
