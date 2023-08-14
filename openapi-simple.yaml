@@ -53,7 +53,7 @@ paths:
         description: Learn more about user operations provided by this API.
         url: http://api.example.com/docs/user-operations/
         
-  /v1/cryptocurrency/map/data/{id}:
+  /v1/cryptocurrency/map/{id}:
     get:
       tags:
         - coinmarketcap
