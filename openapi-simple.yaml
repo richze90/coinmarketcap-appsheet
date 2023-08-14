@@ -23,7 +23,7 @@ externalDocs:
   description: Find out more about Swagger
   url: http://swagger.io
 servers:
-  - url: https://pro-api.coinmarketcap.com/v2
+  - url: https://pro-api.coinmarketcap.com
 tags:
   - name: coinmarketcap
     description: Everything about your Pets
@@ -34,7 +34,7 @@ tags:
 paths:
 
 
-  /cryptocurrency/quotes/latest:
+  /v1/cryptocurrency/map:
     get:
       tags:
         - coinmarketcap
