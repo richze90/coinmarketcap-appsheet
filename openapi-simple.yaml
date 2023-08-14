@@ -34,7 +34,7 @@ tags:
 paths:
 
 
-  /v1/cryptocurrency/map1:
+  /v1/cryptocurrency/map:
     get:
                  
       responses:
@@ -54,12 +54,8 @@ components:
       type: apiKey
       in: query       # can be "header", "query" or "cookie"
       name: CMC_PRO_API_KEY  # name of the header, query parameter or cookie
-    coinid:        # arbitrary name for the security scheme
-      type: apiKey
-      in: query       # can be "header", "query" or "cookie"
-      name: id  # name of the header, query parameter or cookie
+
 # 2) Apply the API key globally to all operations
 
 security:
   - ApiKeyAuth: []     # use the same name as under securitySchemes
-  - coinid: []
