@@ -34,7 +34,7 @@ tags:
 paths:
 
 
-  /v1/cryptocurrency/map/data:
+  /v1/cryptocurrency/map:
     get:
       tags:
         - coinmarketcap
